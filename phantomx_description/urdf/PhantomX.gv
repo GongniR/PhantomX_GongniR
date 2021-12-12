@@ -1,0 +1,80 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"MP_BODY" [label="MP_BODY"];
+"c1_lf" [label="c1_lf"];
+"c2_lf" [label="c2_lf"];
+"thigh_lf" [label="thigh_lf"];
+"tibia_lf" [label="tibia_lf"];
+"c1_lm" [label="c1_lm"];
+"c2_lm" [label="c2_lm"];
+"thigh_lm" [label="thigh_lm"];
+"tibia_lm" [label="tibia_lm"];
+"c1_lr" [label="c1_lr"];
+"c2_lr" [label="c2_lr"];
+"thigh_lr" [label="thigh_lr"];
+"tibia_lr" [label="tibia_lr"];
+"c1_rf" [label="c1_rf"];
+"c2_rf" [label="c2_rf"];
+"thigh_rf" [label="thigh_rf"];
+"tibia_rf" [label="tibia_rf"];
+"c1_rm" [label="c1_rm"];
+"c2_rm" [label="c2_rm"];
+"thigh_rm" [label="thigh_rm"];
+"tibia_rm" [label="tibia_rm"];
+"c1_rr" [label="c1_rr"];
+"c2_rr" [label="c2_rr"];
+"thigh_rr" [label="thigh_rr"];
+"tibia_rr" [label="tibia_rr"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "j_phantomx_attachment" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"j_phantomx_attachment" -> "MP_BODY"
+"MP_BODY" -> "j_c1_lf" [label="xyz: 0.1248 0.06164 0.001116 \nrpy: 0 -1.5708 -3.92699"]
+"j_c1_lf" -> "c1_lf"
+"c1_lf" -> "j_c2_lf" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_lf" -> "c2_lf"
+"c2_lf" -> "j_thigh_lf" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_lf" -> "thigh_lf"
+"thigh_lf" -> "j_tibia_lf" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_lf" -> "tibia_lf"
+"MP_BODY" -> "j_c1_lm" [label="xyz: 0 0.1034 0.001116 \nrpy: 0 -1.5708 -3.1416"]
+"j_c1_lm" -> "c1_lm"
+"c1_lm" -> "j_c2_lm" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_lm" -> "c2_lm"
+"c2_lm" -> "j_thigh_lm" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_lm" -> "thigh_lm"
+"thigh_lm" -> "j_tibia_lm" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_lm" -> "tibia_lm"
+"MP_BODY" -> "j_c1_lr" [label="xyz: -0.1248 0.06164 0.001116 \nrpy: 0 -1.5708 -2.35619"]
+"j_c1_lr" -> "c1_lr"
+"c1_lr" -> "j_c2_lr" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_lr" -> "c2_lr"
+"c2_lr" -> "j_thigh_lr" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_lr" -> "thigh_lr"
+"thigh_lr" -> "j_tibia_lr" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_lr" -> "tibia_lr"
+"MP_BODY" -> "j_c1_rf" [label="xyz: 0.1248 -0.06164 0.001116 \nrpy: 0 -1.5708 -5.49779"]
+"j_c1_rf" -> "c1_rf"
+"c1_rf" -> "j_c2_rf" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_rf" -> "c2_rf"
+"c2_rf" -> "j_thigh_rf" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_rf" -> "thigh_rf"
+"thigh_rf" -> "j_tibia_rf" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_rf" -> "tibia_rf"
+"MP_BODY" -> "j_c1_rm" [label="xyz: 0 -0.1034 0.001116 \nrpy: 0 -1.5708 -6.28319"]
+"j_c1_rm" -> "c1_rm"
+"c1_rm" -> "j_c2_rm" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_rm" -> "c2_rm"
+"c2_rm" -> "j_thigh_rm" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_rm" -> "thigh_rm"
+"thigh_rm" -> "j_tibia_rm" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_rm" -> "tibia_rm"
+"MP_BODY" -> "j_c1_rr" [label="xyz: -0.1248 -0.06164 0.001116 \nrpy: 0 -1.5708 5.49779"]
+"j_c1_rr" -> "c1_rr"
+"c1_rr" -> "j_c2_rr" [label="xyz: 0 -0.054 0 \nrpy: 0 1.5708 3.14159"]
+"j_c2_rr" -> "c2_rr"
+"c2_rr" -> "j_thigh_rr" [label="xyz: 0 0 0 \nrpy: 3.14159 -0 0"]
+"j_thigh_rr" -> "thigh_rr"
+"thigh_rr" -> "j_tibia_rr" [label="xyz: 0 -0.0645 -0.0145 \nrpy: -1.5707 2.11758e-22 3.14159"]
+"j_tibia_rr" -> "tibia_rr"
+}
